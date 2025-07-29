@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sync_btn_menu"
+        android:icon="@drawable/ic_sync"
+        android:title="Sync Data" />
+    <item android:id="@+id/faq_menu"
+        android:icon="@drawable/ic_add"
+        android:title="FAQs"/>
+    <item android:id="@+id/add_species_menu"
+        android:icon="@drawable/ic_add"
+        android:title="Add Species"/>
+    <item android:id="@+id/logout_btn_menu"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
+</menu>

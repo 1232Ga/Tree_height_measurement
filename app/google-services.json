@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711325288726",
+    "project_id": "forestry-app-ea596",
+    "storage_bucket": "forestry-app-ea596.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711325288726:android:24db50bc0ab6ed2cd52837",
+        "android_client_info": {
+          "package_name": "com.garudauav.forestrysurvey"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfURdeTcouWp8NfyUtejbHthpj7bvm3nA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

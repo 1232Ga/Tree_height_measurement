@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white">
+    <!--dddd want to remove-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:id="@+id/text_view_custom_alert_dialog_title"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Message"
+        android:textColor="@color/text_color"
+        android:id="@+id/text_view_custom_alert_dialog"
+        android:layout_below="@+id/text_view_custom_alert_dialog_title"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rel_view_custom_alert_dialog"
+        android:layout_below="@+id/text_view_custom_alert_dialog"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_botton_10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/primary"
+            android:text="Cancel"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_margin="7dp"
+            android:textColor="@color/white"
+            android:id="@+id/text_view_custom_alert_dialog_cancel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Yes"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_margin="7dp"
+            android:background="@color/primary"
+            android:textColor="@color/white"
+            android:id="@+id/text_view_custom_alert_dialog_yes" />
+    </LinearLayout>
+
+
+</RelativeLayout>

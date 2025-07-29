@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".ui.activities.DashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/width_100dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/margin_right_3dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_right_3dp"
+            android:src="@drawable/forestry_logo_new" />
+
+        <View
+            android:layout_width="@dimen/width_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_right_3dp">
+
+            <ImageView
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:id="@+id/sync_btn"
+                android:layout_width="@dimen/width_32dp"
+                android:layout_height="@dimen/height_32dp"
+                android:layout_alignParentTop="true"
+                app:tint="@color/primary"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/margin_right_5dp"
+                android:src="@drawable/ic_sync" />
+
+            <TextView
+                android:id="@+id/sync_badge"
+                android:layout_width="@dimen/width_23dp"
+                android:layout_height="@dimen/height_23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_right_3dp"
+                android:background="@drawable/orange_circle"
+                android:gravity="center"
+                android:text="@string/empty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginEnd="@dimen/margin_right_10dp"
+            android:src="@drawable/ic_logout"
+            android:visibility="gone" />
+
+        <ImageView
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/popup_menu"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"
+            app:tint="@color/iconColor"
+            android:layout_marginEnd="@dimen/margin_right_10dp"
+            android:src="@drawable/ic_hamberger" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tab_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_top_15dp"
+        android:layout_marginTop="@dimen/height_20dp"
+
+        app:cardCornerRadius="@dimen/margin_12dp"
+        app:cardElevation="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/Base.Widget.Design.TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/primary" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_card" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:backgroundTint="@color/primary_transparent"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white"
+        app:elevation="@dimen/height_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="@dimen/height_0dp"
+        app:shapeAppearanceOverlay="@style/fab_3_rounded" />
+</androidx.constraintlayout.widget.ConstraintLayout>

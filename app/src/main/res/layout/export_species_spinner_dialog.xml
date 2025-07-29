@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/selectAllCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_left_16dp"
+        android:text="@string/select_all"
+
+        />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/species_check_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_0dp"
+    tools:listitem="@layout/species_checkbox"
+    android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="@dimen/width_140dp"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginEnd="@dimen/margin_right_5dp"
+            android:background="@color/primary"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="@dimen/width_140dp"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginStart="@dimen/margin_left_5dp"
+            android:background="@color/gray"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_17sp" />
+
+    </LinearLayout>
+</LinearLayout>

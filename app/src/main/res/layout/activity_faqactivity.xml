@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.FAQActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/margin_12dp">
+
+            <ImageView
+                android:id="@+id/back_arrow_img"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/height_20dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/faq"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="@dimen/width_0dp"
+            android:layout_height="@dimen/height_0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/add_species"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginEnd="@dimen/margin_right_10dp"
+            android:src="@drawable/ic_add"
+            android:visibility="gone"
+            app:tint="@color/icon_color" />
+
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginEnd="@dimen/margin_right_10dp"
+            android:src="@drawable/ic_logout"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/height_30dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/faqs"
+                android:textColor="@color/slight_black"
+                android:textSize="@dimen/text_size_40sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/query_1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/margin_20dp"
+                        android:paddingVertical="@dimen/margin_top_15dp">
+
+                        <LinearLayout
+                            android:id="@+id/query_lay_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="@string/question_1"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/text_size_18sp" />
+
+                            <LinearLayout
+                                android:id="@+id/regulate1"
+                                android:layout_width="@dimen/height_30dp"
+                                android:layout_height="@dimen/height_30dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/down_img1"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_down_triangle" />
+
+                                <ImageView
+                                    android:id="@+id/up_img1"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_up_triangle"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:layout_marginEnd="@dimen/margin_top_40dp"
+                            android:textSize="@dimen/text_size_16sp"
+
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/answer_1"
+                            android:textColor="@color/faq_text"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:layout_marginHorizontal="@dimen/margin_20dp"
+                    android:layout_marginVertical="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/query_2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/margin_20dp"
+                        android:paddingVertical="@dimen/margin_top_15dp">
+
+                        <LinearLayout
+                            android:id="@+id/query_lay_2"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="@string/question_2"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/text_size_18sp" />
+
+                            <LinearLayout
+                                android:id="@+id/regulate2"
+                                android:layout_width="@dimen/height_30dp"
+                                android:layout_height="@dimen/height_30dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/down_img2"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_down_triangle" />
+
+                                <ImageView
+                                    android:id="@+id/up_img2"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_up_triangle"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:layout_marginEnd="@dimen/margin_top_40dp"
+                            android:textSize="@dimen/text_size_16sp"
+
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/answer_2"
+                            android:textColor="@color/faq_text"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:layout_marginHorizontal="@dimen/margin_20dp"
+                    android:layout_marginVertical="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/query_3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/margin_20dp"
+                        android:paddingVertical="@dimen/margin_top_15dp">
+
+                        <LinearLayout
+                            android:id="@+id/query_lay_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="@string/question_3"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/text_size_18sp" />
+
+                            <LinearLayout
+                                android:id="@+id/regulate3"
+                                android:layout_width="@dimen/height_30dp"
+                                android:layout_height="@dimen/height_30dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/down_img3"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_down_triangle" />
+
+                                <ImageView
+                                    android:id="@+id/up_img3"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_up_triangle"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:layout_marginEnd="@dimen/margin_top_40dp"
+                            android:textSize="@dimen/text_size_16sp"
+
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/answer_3"
+                            android:textColor="@color/faq_text"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:layout_marginHorizontal="@dimen/margin_20dp"
+                    android:layout_marginVertical="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/query_4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/margin_20dp"
+                        android:paddingVertical="@dimen/margin_top_15dp">
+
+                        <LinearLayout
+                            android:id="@+id/query_lay_4"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="@string/question_4"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/text_size_18sp"/>
+
+                            <LinearLayout
+                                android:id="@+id/regulate4"
+                                android:layout_width="@dimen/height_30dp"
+                                android:layout_height="@dimen/height_30dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/down_img4"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_down_triangle" />
+
+                                <ImageView
+                                    android:id="@+id/up_img4"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_up_triangle"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:layout_marginEnd="@dimen/margin_top_40dp"
+                            android:textSize="@dimen/text_size_16sp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/answer_4"
+                            android:textColor="@color/faq_text"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:layout_marginHorizontal="@dimen/margin_20dp"
+                    android:layout_marginVertical="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/query_5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/margin_20dp"
+                        android:paddingVertical="@dimen/margin_top_15dp">
+
+                        <LinearLayout
+                            android:id="@+id/query_lay_5"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="@string/question_5"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/text_size_18sp" />
+
+                            <LinearLayout
+                                android:id="@+id/regulate5"
+                                android:layout_width="@dimen/height_30dp"
+                                android:layout_height="@dimen/height_30dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/down_img5"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_down_triangle" />
+
+                                <ImageView
+                                    android:id="@+id/up_img5"
+                                    android:layout_width="@dimen/margin_10dp"
+                                    android:layout_height="@dimen/margin_left_5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_up_triangle"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:layout_marginEnd="@dimen/margin_top_40dp"
+                            android:textSize="@dimen/text_size_16sp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/answer_5"
+                            android:textColor="@color/faq_text"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:layout_marginHorizontal="@dimen/margin_20dp"
+                    android:layout_marginVertical="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_line" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

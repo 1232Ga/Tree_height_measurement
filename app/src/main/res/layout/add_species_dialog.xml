@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width_32dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_top_15dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top_15dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/add_species"
+                android:textAlignment="center"
+                android:textColor="@color/slight_black"
+                android:textSize="@dimen/text_size_17sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/species_name"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/asterisk"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10dp"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/input_field_border_black"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/species_title"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/margin_top_5pt"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/enter_species_name"
+                    android:imeOptions="actionNext"
+                    android:maxLength="40"
+                    android:paddingStart="@dimen/margin_top_5pt"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/dark_gray"
+                    android:visibility="visible"
+                    app:boxStrokeWidth="@dimen/boxstrrokewidth_0dp"
+                    app:boxStrokeWidthFocused="@dimen/boxstrokefocused_0dp"
+                    app:hintAnimationEnabled="true"
+                    app:passwordToggleEnabled="false" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/description"
+
+                    android:textColor="@color/sub_heading"
+                    android:textSize="@dimen/text_size_14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/asterisk"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_top_5pt"
+                android:background="@drawable/input_field_border_black"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/species_comment"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/margin_top_5pt"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/enter_description"
+                    android:imeOptions="actionNext"
+                    android:minHeight="@dimen/height_40dp"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/margin_top_5pt"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/dark_gray"
+                    android:visibility="visible"
+                    app:boxStrokeWidth="@dimen/boxstrrokewidth_0dp"
+                    app:boxStrokeWidthFocused="@dimen/boxstrokefocused_0dp"
+                    app:hintAnimationEnabled="true"
+                    app:passwordToggleEnabled="false" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/gray_btn"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/margin_1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/margin_4dp"
+                    android:background="@color/view_line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/ok_btn"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="@dimen/width_150dp"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/width_64dp"
+        android:layout_height="@dimen/height_64dp"
+        android:contentDescription="@string/dialog_icon_description"
+        android:src="@drawable/ic_error"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

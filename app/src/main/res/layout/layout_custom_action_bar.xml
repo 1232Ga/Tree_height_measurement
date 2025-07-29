@@ -1,0 +1,76 @@
+<LinearLayout android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_45dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--dddd  want to remove check-->
+
+    <ImageView
+        android:layout_width="@dimen/width_100dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginVertical="@dimen/margin_right_3dp"
+        android:layout_marginEnd="@dimen/margin_right_3dp"
+        android:src="@drawable/forestry_logo_new" />
+
+    <View
+        android:layout_width="@dimen/width_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_40dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_right_3dp">
+
+        <ImageView
+            android:id="@+id/sync_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_right_5dp"
+            android:src="@drawable/ic_sync" />
+
+        <TextView
+            android:id="@+id/sync_badge"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/orange_circle"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/add_species"
+        android:layout_width="@dimen/width_30dp"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_marginEnd="@dimen/margin_right_10dp"
+        android:src="@drawable/ic_add"
+        app:tint="@color/gray" />
+
+    <ImageView
+        android:id="@+id/logout_btn"
+        android:layout_width="@dimen/width_30dp"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_marginEnd="@dimen/margin_right_10dp"
+        android:src="@drawable/ic_logout" />
+
+    <!--<ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="@dimen/margin_right_10dp"
+        android:src="@drawable/ic_account_circle" />-->
+</LinearLayout>

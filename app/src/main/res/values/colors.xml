@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="slight_black">#454545</color>
+    <color name="sub_heading">#5D5D5D</color>
+    <color name="grey_shade_light">#B5B5B5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="iconColor">#59595B</color>
+    <color name="primary">#5B9D8C</color>
+    <color name="pale_cyan_whisper">#C6FFFFFF</color>
+    <color name="faq_text">#4F4F4F</color>
+    <color name="faq_background">#D8E5E1</color>
+    <color name="primary_transparent">#805B9D8C</color>
+    <color name="tree_count">#2BBBA8</color>
+    <color name="icon_color">#b1b1b1</color>
+    <color name="accurate_height_bg">#F4F4F4</color>
+    <color name="login_card">#66D9D9D9</color>
+    <color name="light_gray">#F6F6F6</color>
+    <color name="highlight_blue">#4285F4</color>
+    <color name="gray">#CFCFCF</color>
+    <color name="gray_btn">#8D8D8D</color>
+    <color name="dark_gray">#A6A6A6</color>
+    <color name="view_line_dark">#9F9F9F</color>
+    <color name="view_line">#F0F0F0</color>
+    <color name="not_clickable">#E3E3E3</color>
+    <color name="camera_bg">#F1F1F1</color>
+    <color name="text_color">#5E5E5E</color>
+    <color name="no_data">#787878</color>
+    <color name="red">#F01313</color>
+    <color name="red2">#FF0000</color>
+    <color name="red3">#F24A4A</color>
+    <color name="sync_color">#C3C3C3</color>
+    <color name="hint_text_color">#A8A8A8</color>
+    <color name="height_layout_bg">#414852</color>
+    <color name="orange">#EFAC00</color>
+    <color name="light_color">#5C000000</color>
+    <color name="onboarding_btn">#5B9D8C</color>
+
+    <!---dots active colors -->
+
+    <color name="dot_active">#000000</color>
+
+    <!--dots inactive colors -->
+
+    <color name="dot_inactive">#cccccc</color>
+
+    <color name="title_color">#636063</color>
+    <color name="approved">#6AA84F</color>
+    <color name="pending">#F1C232</color>
+    <color name="reject">#CC0000</color>
+
+
+
+</resources>

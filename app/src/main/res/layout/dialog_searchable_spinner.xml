@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Linear layout as parent layout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16dp"
+    android:background="@android:color/white"
+    >
+
+    <!-- Text view to show the text Select course-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_species_small"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:id="@+id/edit_text"
+        android:hint="@string/search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/margin_top_5dp"
+        android:singleLine="true"
+        android:paddingStart="@dimen/margin_top_5pt"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:background="@drawable/input_field_border_black"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/montserrat_regular"
+        android:id="@+id/list_view"
+        />
+
+</LinearLayout>

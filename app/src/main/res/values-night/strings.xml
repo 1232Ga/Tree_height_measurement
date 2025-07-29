@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_generated">Please enter generated code to continue</string>
+    <string name="details_to_continue">Please enter your details to continue</string>
+    <string name="height_calculated">Height calculated</string>
+
+
+    <string name="title_slide1">Effortless Data Collection</string>
+
+    <string name="title_slide2">Insightful Dashboard Access</string>
+
+    <string name="title_slide3">Centralized Data Management</string>
+
+    <string name="desc_slider1">Seamlessly gather and record tree species data, including height and girth measurements, for comprehensive surveys.</string>
+
+    <string name="desc_slider2">Access a detailed dashboard that displays all surveyed data, helping you track and analyze the health and diversity of forest ecosystems.</string>
+
+    <string name="desc_slider3">Easily add, view, and manage tree species information specific to districts and reserve forests, ensuring accurate and organized data.</string>
+
+    <string name="start">Start</string>
+    <string name="meter">Meter</string>
+</resources>

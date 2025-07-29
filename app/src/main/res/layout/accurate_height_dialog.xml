@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_top_15dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/height_of_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/height_calculated"
+                android:textAlignment="center"
+                android:textColor="@color/slight_black"
+                android:textSize="@dimen/text_size_17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@color/accurate_height_bg"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tree_height"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/margin_top_5pt"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/margin_top_5pt"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/dark_gray"
+                    android:visibility="visible"
+                    app:boxStrokeWidth="@dimen/boxstrrokewidth_0dp"
+                    app:boxStrokeWidthFocused="@dimen/boxstrokefocused_0dp"
+                    app:hintAnimationEnabled="true"
+                    app:passwordToggleEnabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/height_20dp"
+                    android:text="@string/meter"
+                    android:textColor="@color/gray_btn"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/width_24dp"
+                    android:layout_height="@dimen/height_24dp"
+                    android:layout_marginEnd="@dimen/margin_right_5dp"
+                    android:src="@drawable/ic_camera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/camera"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/width_24dp"
+                    android:layout_height="@dimen/height_24dp"
+                    android:layout_marginEnd="@dimen/margin_right_5dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/location"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center_horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ok_btn"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirm"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/margin_1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/margin_4dp"
+                    android:background="@color/view_line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/try_again"
+                        android:textColor="@color/red2"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

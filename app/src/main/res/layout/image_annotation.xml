@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_400dp"
+    android:layout_height="@dimen/width_600dp">
+
+    <ImageView
+        android:id="@+id/tree_img"
+        android:layout_width="@dimen/width_400dp"
+        android:layout_height="@dimen/width_600dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        />
+
+    <com.garudauav.forestrysurvey.utils.PaintView
+        android:id="@+id/paint"
+        android:layout_width="@dimen/width_400dp"
+        android:layout_height="@dimen/width_600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginEnd="@dimen/margin_right_5dp"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@color/primary"
+            android:clickable="true"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/montserrat_regular"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <Button
+            android:id="@+id/undo_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginStart="@dimen/margin_left_5dp"
+            android:background="@color/gray_btn"
+            android:clickable="true"
+            android:layout_weight="0.5"
+
+            android:fontFamily="@font/montserrat_regular"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="Undo"
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
